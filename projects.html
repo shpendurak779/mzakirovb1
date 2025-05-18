@@ -1,1 +1,177 @@
+<html>
+  <head>
+    <title>Мои проекты</title>
+    <style>
+      body {
+          font-family: 'Segoe UI', sans-serif;
+          margin: 0;
+          background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+          color: #2c3e50;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+      }
 
+      header {
+          background: rgba(255,255,255,0.95);
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          padding: 1rem 0;
+      }
+
+      nav {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          gap: 2rem;
+          padding: 0 2rem;
+      }
+
+      .nav-link {
+          text-decoration: none;
+          color: #2980b9;
+          font-weight: 600;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+      }
+
+      .nav-link:hover {
+          background: #2980b9;
+          color: white;
+          transform: translateY(-2px);
+      }
+
+      main {
+          flex: 1;
+          padding: 2rem 1rem;
+      }
+
+      h1 {
+          text-align: center;
+          font-size: 2.8rem;
+          color: #1a5276;
+          margin: 2rem 0;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      }
+
+      .projects-grid {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+          gap: 2rem;
+          padding: 1rem;
+      }
+
+      .project-card {
+          background: white;
+          border-radius: 15px;
+          padding: 2rem;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+          transition: transform 0.3s ease;
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .project-card:hover {
+          transform: translateY(-10px);
+      }
+
+      .project-card h2 {
+          color: #2980b9;
+          margin-bottom: 1rem;
+          font-size: 1.8rem;
+      }
+
+      .project-description {
+          color: #34495e;
+          line-height: 1.6;
+          flex-grow: 1;
+          margin-bottom: 2rem;
+      }
+
+      .project-link {
+          display: inline-block;
+          background: #2980b9;
+          color: white !important;
+          padding: 0.8rem 1.5rem;
+          border-radius: 25px;
+          text-decoration: none;
+          font-weight: 600;
+          transition: all 0.3s ease;
+          align-self: flex-start;
+      }
+
+      .project-link:hover {
+          background: #1a5276;
+          box-shadow: 0 5px 15px rgba(41,128,185,0.3);
+      }
+
+      footer {
+          background: #1a5276;
+          padding: 2rem 0;
+          margin-top: auto;
+      }
+
+      .social-wrap {
+          text-align: center;
+      }
+
+      .social-icon img {
+          width: 60px;
+          height: 60px;
+          transition: transform 0.3s ease;
+      }
+
+      .social-icon:hover img {
+          transform: scale(1.15) rotate(15deg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="nav-link" href="index.html">Главная</a>
+        <a class="nav-link" href="#">Проекты</a>
+      </nav>
+    </header>
+    <main>
+      <section class="projects">
+        <h1>Мои проекты</h1>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h2>BitMarket</h2>
+            <p class="project-description">Интернет-магазин гаджетов с адаптивным дизайном</p>
+            <a class="project-link" href="https://shpendurak779.github.io/mzakirovb1/site1.html" target="_blank">
+              Посмотреть проект →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h2>PixelDesign</h2>
+            <p class="project-description">Сайт-блог дизайн-студии</p>
+            <a class="project-link" href="https://shpendurak779.github.io/mzakirovb1/site2.html" target="_blank">
+              Посмотреть проект →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h2>PhoneRepair</h2>
+            <p class="project-description">Сервисный центр по ремонту техники</p>
+            <a class="project-link" href="https://shpendurak779.github.io/mzakirovb1/site3.html" target="_blank">
+              Посмотреть проект →
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-wrap">
+        <a class="social-icon" href="#">
+          <img src="https://learn.algoritmika.org/uploads/2021/04/Group%201_0_1618254571.png" alt="Соцсети"/>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
