@@ -1,0 +1,184 @@
+<style>
+  body {
+    font-family: sans-serif;
+    background-color: black;
+  }
+  
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      margin-bottom: 20px;
+  }
+  
+  .button {
+      background-color: #36bbce;
+      color: black;
+      text-decoration: none;
+      padding: 15px;
+      font-size: 24px;
+      border-radius: 10px;
+      display: block;
+  }
+  
+  nav {
+      border-top: 5px solid white;
+      border-bottom: 5px solid white;
+      padding: 25px 100px 25px 95px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .nav-link {
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      display: block;
+  }
+  
+  h1::before {
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      margin-top: 45px;
+      margin-bottom: 40px;
+      content: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg);
+  }
+  
+  .post-text {
+      font-size: 24px;
+  }
+  
+  .info {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+  }
+  
+  .post {
+      background-color: white;
+      padding: 15px 45px 30px 45px;
+      width: 400px;
+      margin: 20px;
+      position: relative;
+  }
+  
+  .article-but {
+      text-decoration: none;
+      background-color: #133aac;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      padding: 10px 75px 10px 75px;
+      display: block;
+  }
+  
+  .full-image {
+      margin: 100px 0px 100px 0px;
+  }
+  
+  .social {
+      display: block;
+      width: 30px;
+  }
+  
+  footer {
+      background-color: white;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 30px 30px 20px 45px;
+  }
+  
+  .footer-text {
+      font-size: 24px;
+      margin-right: 30px;
+  }
+  
+  .footer-text span {
+      color: #850AE5;
+      font-weight: bolder;
+  }
+  .fixed{
+  position: fixed;
+  }
+  .hit{
+     position: absolute;
+     right: 20px;
+      top: 20px;
+  }
+  
+  .address::before {
+      content: url(data:image/jpeg;base64,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);
+      display: block;
+  }
+  
+  .article-but:hover{
+  background-color: black;
+  }
+</style>
+
+<html>
+    <head>
+        <title>BitMarket</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="https://learn.algoritmika.org/uploads/2021/03/logo1_0_1615899136.svg">
+            <a class="button" href="">Скидки</a>
+        </header>
+        <nav>
+            <a class="nav-link" href="">Каталог</a>
+            <a class="nav-link" href="">Оптом</a>
+            <a class="nav-link" href="">Доставка</a>
+            <a class="nav-link" href="">Возврат товара</a>
+        </nav>
+        <main>
+            <h1>Профессионалы советуют</h1>
+            <section class="info">
+                <article class="post">
+                    <img class="hit" src="https://cdn-images.dzcdn.net/images/cover/976ecd747edb60d200ebfb2b6433cd2f/500x500-000000-80-0-0.jpg" width="40"/>
+                    <h2>Лэптоп для отдыха</h2>
+                    <img class="post-img" src="https://learn.algoritmika.org/uploads/2021/02/notebook-405755_1920_0_1613586011.jpg" width="400px" height="300px"/>
+                    <p class="post-text">Samsung V145-S</p>
+                    <a class="article-but" href="">Подробнее</a>
+                </article>
+                <article class="post">
+                    <h2>Как выбрать наушники</h2>
+                    <img class="post-img" src="https://learn.algoritmika.org/uploads/2021/02/music-1813100_1280_0_1613586010.png" width="330px" height="300px"/>
+                    <p class="post-text">Поговорим о новинках</p>
+                    <a class="article-but" href="">Подробнее</a>
+                </article>
+                <article class="post">
+                    <h2>Телефон мечты</h2>
+                    <img class="post-img" src="https://learn.algoritmika.org/uploads/2021/02/mobile-phone-1875813_1920_0_1613586011.jpg" width="400px" height="300px"/>
+                    <p class="post-text">Apple iphone 13</p>
+                    <a class="article-but" href="">Подробнее</a>
+                </article>
+                <article class="post">
+                    <h2>Техника для всего</h2>
+                    <img class="post-img" src="https://learn.algoritmika.org/uploads/2021/02/laptop-1483974_1920_0_1613586010.jpg" width="400px" height="300px"/>
+                    <p class="post-text">И целого мира мало...</p>
+                    <a class="article-but" href="">Подробнее</a>
+                </article>
+            </section>
+            <aside class="fixed">
+            <p><b>Напиши — получи промокод!</b></p>
+            <a class="social" href=""><img src="https://learn.algoritmika.org/uploads/2021/02/Group%201_0_1613586391.png" width="30px" height="30px"></a>
+            <img class="full-image" src="https://learn.algoritmika.org/uploads/2021/02/mobile-phone-1419275_1920_0_1613586010.jpg" width="100%" min-height="270"/>
+            </aside>
+        </main>
+        <footer>
+            <div class="contacts">
+                <p class="footer-text"><span class="address">Адрес:</span> город Технологический,<br/> пр-д Современный, 29/2</p>
+                <p class="footer-text"><span class="tel">Телефон:</span> 4138-564</p>
+            </div>
+            <div class="footer-logo">
+                <img src="https://learn.algoritmika.org/uploads/2021/03/logo2_0_1615898903.svg"/>
+            </div>
+        </footer>
+    </body>
+</html>
