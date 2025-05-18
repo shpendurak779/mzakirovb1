@@ -72,6 +72,7 @@
           min-height: 300px;
           display: flex;
           flex-direction: column;
+          position: relative;
       }
 
       .project-card:hover {
@@ -82,6 +83,20 @@
           color: #2980b9;
           margin-bottom: 1rem;
           font-size: 1.8rem;
+      }
+
+      .project-card h2::after {
+          content: '';
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          margin-left: 10px;
+          vertical-align: middle;
+          background-size: contain;
+      }
+
+      .project-card[data-type="figma"] h2::after {
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300"><path fill="%232980b9" d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50zm0-150h50V0H50C22.4 0 0 22.4 0 50s22.4 50 50 50zm0 0h50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"/></svg>');
       }
 
       .project-description {
@@ -134,6 +149,8 @@
       <nav>
         <a class="nav-link" href="index.html">Главная</a>
         <a class="nav-link" href="#">Проекты</a>
+        <a class="nav-link" href="#">Навыки</a>
+        <a class="nav-link" href="#">Контакты</a>
       </nav>
     </header>
     <main>
@@ -142,7 +159,7 @@
         <div class="projects-grid">
           <article class="project-card">
             <h2>BitMarket</h2>
-            <p class="project-description">Интернет-магазин гаджетов с адаптивным дизайном</p>
+            <p class="project-description">Интернет-магазин гаджетов с адаптивным дизайном и системой фильтрации товаров</p>
             <a class="project-link" href="https://shpendurak779.github.io/mzakirovb1/site1.html" target="_blank">
               Посмотреть проект →
             </a>
@@ -150,7 +167,7 @@
 
           <article class="project-card">
             <h2>PixelDesign</h2>
-            <p class="project-description">Сайт-блог дизайн-студии</p>
+            <p class="project-description">Лендинг дизайн-студии с интерактивным портфолио и формой заказа услуг</p>
             <a class="project-link" href="https://shpendurak779.github.io/mzakirovb1/site2.html" target="_blank">
               Посмотреть проект →
             </a>
@@ -158,8 +175,24 @@
 
           <article class="project-card">
             <h2>PhoneRepair</h2>
-            <p class="project-description">Сервисный центр по ремонту техники</p>
+            <p class="project-description">Сервисный центр по ремонту техники с калькулятором стоимости услуг</p>
             <a class="project-link" href="https://shpendurak779.github.io/mzakirovb1/site3.html" target="_blank">
+              Посмотреть проект →
+            </a>
+          </article>
+          <article class="project-card" data-type="figma">
+            <h2>BitMarket Design</h2>
+            <p class="project-description">Макет интернет-магазина в Figma с продуманным UX/UI и мобильной адаптацией</p>
+            <a class="project-link" href="https://www.figma.com/design/2uHuhls3prMM8s65DQZ7JU/Untitled?node-id=0-1&t=apxINg8rzkVvFf7w-1" target="_blank">
+              Открыть макет →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h2>Дед Мороз</h2>
+            <p class="project-description">Групповой новогодний проект: интерактивный сайт о жизни Деда Мороза с анимациями</p>
+            <p class="project-description"><em>Моя роль:</em> Вёрстка на Tilda, интеграция контента от команды</p>
+            <a class="project-link" href="https://dedmorozz15987.tilda.ws/mysite" target="_blank">
               Посмотреть проект →
             </a>
           </article>
